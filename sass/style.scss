@@ -15,6 +15,7 @@ $color-three: #ecf0f1;
   text-align: center;
 }
 
+// splash
 .splash {
   height: 80vh;
   position: relative;
@@ -64,7 +65,6 @@ ul li {
   text-align: center; // Center text inside .intro
 }
 
-
 .intro h3 {
   font-family: 'Playfair Display', serif;
   font-size: 60px;
@@ -97,6 +97,7 @@ ul li {
   background-size: 300%;
 }
 
+// services
 .services h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
@@ -146,6 +147,7 @@ ul li {
   font-size: 15px;
 }
 
+// portfolio
 .portfolio {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -190,6 +192,7 @@ ul li {
   margin-top: 0;
 }
 
+// footer
 .footer {
   margin: 20px auto;
   font-family: 'Space Grotesk', sans-serif;
@@ -221,3 +224,128 @@ ul li {
   border-radius: 50%;
   align-items: center;
 }
+
+// media
+@media (max-width: 767px) {
+
+  .container {
+    padding: 5px;
+  }
+
+  // splash
+  .splash p {
+    text-align: center;
+  }
+
+  .splash ul {
+    margin: 0;
+  }
+
+  .splash ul li {
+    margin-right: 5px;
+  }
+
+  .splash ul li a {
+    font-size: 0.75rem;
+  }
+
+  // intro
+  .intro {
+    width: 90%;
+  }
+
+  .intro h3 {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  // services
+  .pseudo-card-one {
+    margin: 20px 20px;
+  }
+
+  .pseudo-card-one i {
+    font-size: 30px;
+    background: $color-one;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: $brand-color;
+    border: 2px solid $brand-color;
+  }
+
+  .services .pseudo-card-one p:first-of-type {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  .services .pseudo-card-one p:last-of-type {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  // portfolio
+  .portfolio {
+    padding-top: 50px;
+  }
+
+  .cards {
+    margin: 0 auto;
+  }
+
+  .pseudo-card-two {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  // footer
+  .footer {
+    font-size: 16px;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  .footer .row {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .footer ul li a {
+    font-size: 16px;
+    line-height: 16px;
+    padding-right: 5px;
+  }
+
+  .footer i {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+  // splash
+  .splash p {
+    text-align: center;
+  }
+
+  // footer
+  .footer p {
+    text-align: center;
+  }
+}
+
+
